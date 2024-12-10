@@ -1,0 +1,29 @@
+{
+  "name": "solana-trading-bot-using-jupiter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon index.ts --exec ts-node",
+    "build": "tsc",
+    "deploy": "node dist/index.js",
+    "start": "npm run deploy"
+  },
+  "dependencies": {
+    "@jup-ag/api": "^6.0.27",
+    "@solana/spl-token": "^0.4.8",
+    "@solana/web3.js": "^1.95.3",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/config": "3.3.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^5.5.4"
+  },
+  "exports": {
+    "./lib/util/namespace": "./lib/util/namespace.js"
+  }
+}
